@@ -19,15 +19,24 @@ import java.util.Scanner;
 public class Principal { 
 	public static void main(String[] args) { 
 		
-		// Salda√ß√£o e pergunta o nome.
-		System.out.println("Ol√° amigo!\nQual √© o seu nome?");
+		// SaldaÁ„o e pergunta o nome.
+		System.out.println("Ol· amigo!\nQual È o seu nome?");
 		
 		// Ler o nome.
 		Scanner in =  new Scanner(System.in);
 		String nome = in.nextLine();
 		
-		// Salda√ß√£o espec√≠fica para o nome lida.
-		System.out.printf("Ol√° %s!", nome);
+		// SaldaÁ„o para o nome lido.
+		System.out.printf("Ol· %s!", nome);
+		
+		// Perguntar a Idade
+		System.out.printf("%s, qual È a sua idade?", nome);
+		
+		// Ler idade.
+		Integer idade = in.nextInt();
+		
+		System.out.printf("%d! Puxa! Como vocÍ È jovem!", idade);
+		
 		
 	}
 
